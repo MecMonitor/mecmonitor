@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alô, Mundo</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600&family=JetBrains+Mono&display=swap">
+  <style>
+    :root {
+      --fundo: #f3f5f7;
+      --texto: #14202b;
+      --suave: #5b6b78;
+      --destaque: #0b7a75;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --fundo: #0f1519;
+        --texto: #e6edf2;
+        --suave: #8fa0ad;
+        --destaque: #3cc2b8;
+        color-scheme: dark;
+      }
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      margin: 0;
+      padding-inline: 24px;
+      background: var(--fundo);
+      color: var(--texto);
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    }
+
+    main {
+      max-width: 40rem;
+      min-height: 100%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    .codigo {
+      font-family: "JetBrains Mono", Consolas, monospace;
+      font-size: 13px;
+      color: var(--suave);
+    }
+
+    h1 {
+      margin: 0;
+      font-family: "Bricolage Grotesque", system-ui, sans-serif;
+      font-weight: 600;
+      font-size: clamp(3rem, 12vw, 6rem);
+      line-height: 1;
+      letter-spacing: -0.02em;
+    }
+
+    h1 span {
+      color: var(--destaque);
+    }
+
+    p {
+      margin: 0;
+      font-size: 1.05rem;
+      color: var(--suave);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="codigo">&lt;h1&gt;Alô, mundo!&lt;/h1&gt;</div>
+    <h1>Alô, <span>mundo!</span></h1>
+    <p>Minha primeira página em HTML.</p>
+  </main>
+</body>
+</html>

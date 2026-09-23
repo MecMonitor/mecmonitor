@@ -1,0 +1,16 @@
+{
+  "name": "mecmonitor-ferramentas",
+  "private": true,
+  "type": "module",
+  "description": "Reduz o modelo 3D da bancada, embute no sketch do ESP32 e simula o ESP32 no computador para testes.",
+  "scripts": {
+    "modelo": "node preparar-modelo.mjs",
+    "servidor": "node servidor-teste.mjs"
+  },
+  "dependencies": {
+    "@gltf-transform/core": "4.5.0",
+    "@gltf-transform/extensions": "4.5.0",
+    "@gltf-transform/functions": "4.5.0",
+    "meshoptimizer": "1.2.0"
+  }
+}
